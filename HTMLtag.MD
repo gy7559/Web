@@ -65,5 +65,12 @@ X = 종료 태그 없음
 엔티티 에대한 자세한 정보는  https://www.w3.org/TR/html4/sgml/entities.html 사이트에서 확인가능.
 
 
+## 8. 문자셋
+
+head 태그안에 meta태그에 명시하는것      
+
+        HTML5에서 UTF-8의 경우 : <meta charset="UTF-8">
+        HTML4에서 UTF-8의 경우 : <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">     
+
 
 
