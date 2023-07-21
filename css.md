@@ -33,3 +33,43 @@ id의 경우 선택자 앞에 #을 붙여준다
 
 
 
+# 3. 배경설정
+css에서 background 속성은 다음과 같다.        
+1. background-color :  배경색
+2. background-image : 배경에 넣어두는 이미지
+3. background-repeat : 배경 이미지를 수평 혹은 수직 방향으로 반복하여 나타내도록 설정
+4. background-position : 배경 이미지의 상대적 위치 설정
+5. background-attachment : 배경 이미지의 위치 고정
+
+
+## background-position
+1. left top
+2. left center
+3. left bottom
+4. right top
+5. right center
+6. right bottom
+7. center top
+8. center center
+9. center bottom
+
+
+%나 px을 사용하여 상대 위치를 직접 명시할 수도 있다.
+
+
+
+
+# 4. 텍스트
+텍스트의 속성으로는 
+
+1. color :  글자색 설정
+2. direction : 텍스트가 써지는 방향 설정
+3. letter-spacing : 텍스트내에서 글자 사이의 간격 설정
+4. word-spacing : 텍스트내에서 단어 사이의 간격 설정
+5. text-indent : 단락의 첫 줄에 들여쓰기 할지 안 할지 설정 합니다.
+6. text-align : 텍스트의 수평 방향 정렬을 설정 합니다.
+7. text-decoration : 여러 효과를 설정하거나 제거하는대 사용 ex) overline 택스트 윗줄 생성 
+8. text-transform : 영문자에 대한 대소문자 설정 
+9. line-height : 텍스트의 줄 간격을 설정 합니다.
+10. text-shadow : 텍스트에 그림자 효과 설정
+
