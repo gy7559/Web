@@ -16,7 +16,7 @@
 
 HTML4의 표준 색상은 16가지로 
 다음과 같다.
-|---|---|
+
 |aqua|black|
 |blue|fuchsia|
 |gray|green|
