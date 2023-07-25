@@ -94,5 +94,20 @@ a태그 안에 같이 사용해야되며 target을 사용하여 링크에 들어
 
 
 # 7. 리스트와 테이블
+리스트의 속성은 type, image, position 3개로        
+ilst-style-type 과 같이 작성하여 적용한다.
+ 
+type의 경우 리스트 요소 앞의 마크를 변경가능하다.      
+image의 경우 지정 이미지로 마크를 변경가능하다.      
+position의 경우 요소의 위치 지정으로  insdie outside가 있다.      
+
+그냥 ilst-style로 속성을 한번에 적용 가능하다.   
+
+
+
+테이블의 속성으로는 태두리를 지정하는 border와 border-collapse        
+요소간의 여백을 지정하는 border-spacing          
+요소안의 정렬 기준을 정해주는 text-align       
+수직으로 정렬하는(위에서부터, 아래서부터) vertical-align         
 
 
