@@ -111,3 +111,57 @@ position의 경우 요소의 위치 지정으로  insdie outside가 있다.
 수직으로 정렬하는(위에서부터, 아래서부터) vertical-align         
 
 
+# 8. 이미지 스프라이트
+
+여러 이미지를 하나의 이미지에 넣어서 관리하는것으로 이미지 처리가 빨라진다. 
+
+![img_css_image_sprites](https://github.com/gy7559/Web/assets/62734041/b56944ed-90b8-444c-b1cc-40a2232b168f)
+위 와같이 하나의 이미지에 4개의 아이콘을 넣어 이미지를 불러올때 위치를 지정 하나의 아이콘을 쓰는 방식
+
+
+
+# 9. 크기지정
+1. height  요소의 높이 지정
+2. width  요소의 넓이지정 
+3. max-width   요소의 최대넓이 지정으로 화면크기가 작아지면 맞춰서 작아진다.
+4. min-width    요소의 최소넓이 지정으로 화면크기가 커지면 맞춰서 커진다.
+5. max-height  요소의 최대높이 지정으로 화면크기가 작아지면 맞춰서 작아진다.
+6. min-height  요소의 최소높이 지정으로 화면크기가 커지면 맞춰서 커진다.
+
+
+
+
+# 10. 박스모델
+![img_css_boxmodel](https://github.com/gy7559/Web/assets/62734041/42135a89-c845-4ab7-a05b-3cf4dba5cee5)
+ 
+
+1. 내용(content) : 텍스트나 이미지가 들어있는 박스의 실질적인 내용 부분
+2. 패딩(padding) : 내용과 테두리 사이의 간격
+3. 테두리(border) : 내용와 패딩 주변을 감싸는 테두리
+4. 마진(margin) : 테두리와 이웃하는 요소 사이의 간격
+
+### 1. 패딩
+패딩의 속성으로는 padding-top(이후로는 padding생략), right,bottom,left가 있다.      
+
+축약표현      
+
+      ex) padding: 20px 50px 30px 50px;  = 
+            padding-top: 20px;
+            padding-right: 50px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            와 같고 3개로 축약할 경우 top, left와 right, bottom이다.
+
+
+### 2. boder속성
+
+속성으로는 실선설정 solid와 이중실선설정 double등 여러가지가 있으며       
+border-width 속성으로 두께를 설정 가능하다.       
+
+또한 border-color속성으로 색 설정도 가능하다.     
+border-top, right,bottom,left를 이용하여 각 태두리별 속성을 개별 성정이 가능하다.      
+
+### 3. 마진
+패딩과 같지만 background-color 속성에 영향을 받지 않으며 각요소의 border간의 거리 설정이다.       
+
+
