@@ -217,3 +217,44 @@ margin은 가운대 정렬 position, float은 좌우 정렬이다.
 특정요소의 하위 요소중 하로밑에 존재하는 특정타입의 요소를 지정        
 
       ex)div > p{스타일;}
+
+## 3. 동위 선택자
+
+일반 동위 선택자는 해당 요소와 동위 관계에 있으며, 해당 요소보다 뒤에 존재하는 특정 타입의 요소를 모두 선택
+
+
+      ex)div ~ p{스타일;}
+
+
+인접동위 선택자는 바로 뒤에존재하는것만 적용 
+
+
+      ex)div + p{스타일;}
+
+
+
+# 17. 의사 클래스 
+
+요소의 상태를 명시할때 사용하는 클래스     
+
+
+## 1. 동적의사 클래스
+
+link, visited, hover, active, focus 가있다.    
+
+## 2. 상태 의사 클래스
+checked, enabled, disabled 가있다.     
+
+## 3. 구조 의사 클래스
+first-child,last-child,nth-child,nth-last-child,              
+first-of-type,last-of-type,nth-of-type,nth-last-of-type
+으로 되어있으며         
+자식요소나 타입 을 지정하여 맨앞 맨뒤등 여러 지정이 가능하다.         
+empty는 자식과 타입이 없는요소지정 root는 html요소를 지정하게 된다.       
+
+# 17. 의사요소
+요소의 특정부부만 지정할때 사용 
+
+    ex) 선택자::의사요소이름 {속성: 속성값;}
+
+
