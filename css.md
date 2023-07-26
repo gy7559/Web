@@ -446,3 +446,102 @@ repeat는 반복처리할지 늘리지 설정
 overflow는 콘텐츠 영역을 벗어난 텍스트의 표현방법 설정       
 wrap은 길이가 긴 단어를 다음 줄에 나누어 표현할 수 있도록 해준다    
 break는 길이가 긴 단어를 나누어 표현할때 나누는 기준 설정
+
+
+## 9.글꼴
+ @font-face 규칙이 추가되었다.      
+ 웹글꼴을 써서 사용자의 컴퓨터에 글꼴이 없어도 사용이 가능하다.      
+
+ # 8. 변형
+
+## 1. Transform
+
+### 1. 2D Transform
+HTML 요소의 모양, 크기, 위치 등을 자유롭게 바꿀 수 있다.        
+
+움직이거나 회전시키거나 크기를 변형시키는것이 가능하다.      
+
+1. translate() : 움직임
+2. rotate() :  회전시킴
+3. scale() : 크기변경
+4. skew() : 기울임
+5. matrix() : 위의 모든 메소드를 한줄에 작성가능
+
+   ex) matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+
+
+### 2. 3D Transform
+
+1. rotate() : XYZ 축으로 각각 회전이 가능 ex)  rotateX() rotateY() rotateZ()
+2. translate() : XYZ축 을 방향으로 이동 
+3. scale() : 
+4. matrix()
+5. perspective() : 원근감의 기준
+
+
+## 2. 애니메이션
+
+### 1. @keyframes 규칙
+CSS3에서 애니메이션 효과를 사용하기 위해서는 우선 애니메이션에 대한 키 프레임(keyframe)을 정의해야된다.        
+
+
+animation-name 속성을 이용하여 요소와 키 프레임을 연결해 주어야 한다.      
+
+
+# 9. 변형
+
+## 1. 버튼 
+a태그와 input태그로도 버튼이 작성 가능하다.   
+
+## 2. 사용자 인터페이스
+사용자가 요소나 아웃라인 등을 변경할수 있게 해준다.   
+아래와 같은 속성이 있다. 
+1. resize
+2. outline-offset
+3. box-sizing
+4. nav-index
+5. nav-left
+6. nav-right
+7. nav-up
+8. nav-down
+
+## 3. 다중칼럼 레이아웃
+여러게의 칼럼으로 구성되는 구조를 column속성으로 손쉽게 만들수 있다.       
+아래와 같은 속성이 있다.      
+
+1. columns
+2. column-count
+3. column-gap
+4. column-width
+5. column-span
+6. column-fill
+7. column-rule
+8. column-rule-style
+9. column-rule-width
+10. column-rule-color
+
+## 4. 플렉서블 박스 레이아웃
+서로 다른 크기의 화면과 기기에서도 HTML 요소들이 자동으로 재정렬되어, 웹 페이지의 레이아웃을 언제나 똑같이 유지할 수 있게 해준다.    
+속성은 아래와 같다      
+
+1. display
+2. flex-direction
+3. justify-content
+4. align-items
+5. flex-wrap
+6. flex-flow
+7. align-content
+
+
+플렉스 요소를 위한 속성 
+1. order
+2. align-self
+3. flex
+
+
+## 5. 미디어 쿼리
+CSS3에서는 @media 규칙을 더욱 발전시켜 매체 유형(media type)과 하나 이상의 
+표현식(expression)으로 구성된 미디어 쿼리(media query)를 사용할 수 있습니다.      
+
+
+ 
