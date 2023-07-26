@@ -326,3 +326,123 @@ css와 완전히 호환 css의 최신 표준 권고안 이다.
 3. 색 Level3
 4. 네임스페이스
 
+## 2. 벤더 프리픽스
+벤더 프리픽스(vendor prefix)란 이러한 주요 웹 브라우저 공급자가 새로운 실험적인 기능을        
+제공할 때 이전 버전의 웹 브라우저에 그 사실을 알려주기 위해 사용하는 접두사(prefix)
+
+## 3. 색
+RGBA 색상값으로 표현 가능(R,G,B,A(투명도))      
+HSL 색상값으로 표현가능(색상(0~360),채도,명도)         
+HSLA  색상값으로 표현 HSL에서 A(투명도가 추가됨)
+
+
+### 1. opacity 속성
+색상의 투명도 설정 0.0~1.0        
+opacity 속성은 투명도를 설정했을 때 설정한 요소의 모든 자식(child) 요소까지 전부 같은 투명도로 설정          
+알파 채널은 투명도를 설정한 요소에만 투명도를 설정           
+
+## 4. 그래디언트
+
+색사이의 표현을 부드럽게 전환해주는 효과      
+
+선형과 원형 그래디언트가 있다.      
+
+### 1. 선형 그래디언트 
+
+  ex) background: linear-gradient(진행방향, 색상지정점1, 색상지정점2, ...);
+
+각도지정 등을 통해서 대각선 진행 혹은 수직 수평 지정이 가능하다.              
+RBGA값을 통하여 투명도또한 설정 가능하다.(점점사라지는것이 가능)        
+
+### 2. 원형 그래디언트
+
+   ex) background: radial-gradient(모양 크기 at 중심점, 색상지정점1, 색상지정점2, ...);       
+
+중심점부터 시작되는 원형 그래디언트       
+
+
+   
+## 5. 그림자 효과
+shadow속성으로 text-shadow와 box-shadow가 있다.      
+
+### 1. text-shadow
+
+    ex)text-shadow: 그림자의x축값 그림자의y축값 blur값 색상값;
+
+그림자의 흐림정도를 나타내는 blur값을 명시해야 한다.
+
+
+
+### 2. box-shadow 
+
+
+     ex) box-shadow: 그림자의x축값 그림자의y축값 blur값 색상값;
+
+## 6. 배경
+새로추가된 속성은 
+
+1. background-size
+2. background-origin
+3. background-clip
+
+
+위 3가지가 있다.         
+
+### 1. size
+배경 이미지의 크기를 설정하여 준다.      
+
+  ex) background-size: 너비 높이 contain|cover ;
+
+
+크기단위로 표시해주면 됨
+
+### 2. origin
+배경 이미지의 위치를 결정할 기준을 설정한다.       
+
+속성값으로는 아래와 같다.       
+
+1. border-box : 배경 이미지를 테두리(border) 영역의 왼쪽 위에 맞춥니다.
+2. padding-box : 기본 설정이며, 배경 이미지를 패딩(padding) 영역의 왼쪽 위에 맞춥니다.
+3. content-box : 배경 이미지를 내용(content) 영역의 왼쪽 위에 맞춥니다.
+
+
+### 3. clip
+요소의 배경의 영역을 설정하여 준다.
+속성값은 아래 3가지다.
+
+1. border-box : 기본 설정이며, 배경을 테두리(border) 영역의 끝부분까지 설정합니다.
+2. padding-box : 배경을 패딩(padding) 영역의 끝부분까지 설정합니다.
+3. content-box : 배경을 내용(content) 영역까지만 설정합니다.       
+
+
+## 7. 태두리
+추가된 속성
+
+1. border-radius
+2. border-top-left-radius
+3. border-top-right-radius
+4. border-bottom-right-radius
+5. border-bottom-left-radius
+6. border-image
+7. border-image-source 
+8. border-image-slice
+9. border-image-width
+10. border-image-outset
+11. border-image-repeat
+
+radius의 경우 모서리를 둥글게 만드는것이고 image는 태두리에 이미지를 사용할수있다.      
+source는 이미지설정 slice는 자르는방법의 설정 outset는 태두리이미지가 넘어갈정도설정    
+repeat는 반복처리할지 늘리지 설정       
+
+
+## 8. 텍스트
+추가된 속성
+
+1. text-overflow
+2. word-wrap
+3. word-break
+
+
+overflow는 콘텐츠 영역을 벗어난 텍스트의 표현방법 설정       
+wrap은 길이가 긴 단어를 다음 줄에 나누어 표현할 수 있도록 해준다    
+break는 길이가 긴 단어를 나누어 표현할때 나누는 기준 설정
