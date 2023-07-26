@@ -8,12 +8,12 @@ css의 문법이다.
 명 뒤에 :(콜론) 을붙이고 값 뒤에 ;(세미콜론)을 붙어 끝마쳐야 한다.     
 
 
-# 2. 주석
+## 1. 주석
 작성 방법은 /*(별표) (별표)*/로 작성 가능하다.(자바의 주석처리와 같다.)
 
+# 2. 기본설정
 
-
-# 3. 배경설정
+## 1. 배경설정
 css에서 background 속성은 다음과 같다.        
 1. background-color :  배경색
 2. background-image : 배경에 넣어두는 이미지
@@ -22,7 +22,7 @@ css에서 background 속성은 다음과 같다.
 5. background-attachment : 배경 이미지의 위치 고정
 
 
-## background-position
+### background-position
 1. left top
 2. left center
 3. left bottom
@@ -39,7 +39,7 @@ css에서 background 속성은 다음과 같다.
 
 
 
-# 4. 텍스트
+## 2. 텍스트
 텍스트의 속성으로는 
 
 1. color :  글자색 설정
@@ -54,7 +54,7 @@ css에서 background 속성은 다음과 같다.
 10. text-shadow : 텍스트에 그림자 효과 설정
 
 
-# 5. font
+## 3. font
 font속성으로는 
 
 1. font-family : 글씨체 지정(글꼴을 여러게 지정하여 처음 글꼴이 표시되지 않으면 두번째 세번째 순으로 글씨체가 표시됨)
@@ -67,13 +67,13 @@ font속성으로는
 
 
 
-# 6. 링크
+## 4. 링크
 
 a태그 안에 같이 사용해야되며 target을 사용하여 링크에 들어가는 방법의 설정 가능      
 상태를 지정하여 각각의 스타일을 적용 가능      
 
 
-# 7. 리스트와 테이블
+## 5. 리스트와 테이블
 리스트의 속성은 type, image, position 3개로        
 ilst-style-type 과 같이 작성하여 적용한다.
  
@@ -91,7 +91,7 @@ position의 경우 요소의 위치 지정으로  insdie outside가 있다.
 수직으로 정렬하는(위에서부터, 아래서부터) vertical-align         
 
 
-# 8. 이미지 스프라이트
+## 6. 이미지 스프라이트
 
 여러 이미지를 하나의 이미지에 넣어서 관리하는것으로 이미지 처리가 빨라진다. 
 
@@ -99,8 +99,8 @@ position의 경우 요소의 위치 지정으로  insdie outside가 있다.
 위 와같이 하나의 이미지에 4개의 아이콘을 넣어 이미지를 불러올때 위치를 지정 하나의 아이콘을 쓰는 방식
 
 
-
-# 9. 크기지정
+# 3. 박스모델
+## 1. 크기지정
 1. height  요소의 높이 지정
 2. width  요소의 넓이지정 
 3. max-width   요소의 최대넓이 지정으로 화면크기가 작아지면 맞춰서 작아진다.
@@ -111,7 +111,7 @@ position의 경우 요소의 위치 지정으로  insdie outside가 있다.
 
 
 
-# 10. 박스모델
+## 2. 박스모델
 ![img_css_boxmodel](https://github.com/gy7559/Web/assets/62734041/42135a89-c845-4ab7-a05b-3cf4dba5cee5)
  
 
@@ -144,7 +144,7 @@ border-top, right,bottom,left를 이용하여 각 태두리별 속성을 개별 
 ### 3. 마진
 패딩과 같지만 background-color 속성에 영향을 받지 않으며 각요소의 border간의 거리 설정이다.       
 
-# 11. 아웃라인
+## 3. 아웃라인
 outline 속성은 HTML 요소의 가장 바깥 부분을 둘러싸고 있는 아웃라인 부분의 스타일을 설정    
 border와 같은속성들을 가진다. 하지만 요소의 전체크기에 포함되지 않아 높이 넓이 두께는 영향을 받지 않는다.     
 
@@ -156,8 +156,8 @@ border와 같은속성들을 가진다. 하지만 요소의 전체크기에 포�
 px은 두께지정, soild는 실선 설정, teal은 색설정이다.
 
 
-
-# 12. 디스플레이 속성
+# 4. 위치속성
+## 1. 디스플레이 속성
 블록 요소와 인라인 요소를 지정하는 말이다.(보여주기 위한 요소들)
 
 
@@ -168,7 +168,7 @@ px은 두께지정, soild는 실선 설정, teal은 색설정이다.
 요소의 투명도를 조절할 수 있다.      
 
 
-# 13. position 속성
+## 2. position 속성
 position 속성은 HTML 요소가 위치를 결정하는 방식을 설정
 CSS에서 요소의 위치를 결정하는 방식에는 다음과 같이 4가지 방식이 있습니다.
 
@@ -178,7 +178,7 @@ CSS에서 요소의 위치를 결정하는 방식에는 다음과 같이 4가지
 3. 고정 위치(fixed position) 지정 방식
 4. 절대 위치(absolute position) 지정 방식
 
-# 14. float 속성
+## 3. float 속성
 요소와 요소가 자연스럽게 어울리도록 만들어주는 역할 요즘은 레이아웃 작성에 많이 쓰임      
 ### 1. clear속성
 float속성을 사용한뒤 그뒤에 요소들이 영향을 받지않도록          
@@ -190,11 +190,15 @@ float 속성이 적용된 HTML 요소가 자신을 감싸고 있는 컨테이너
 이때 overflow 속성값을 auto로 설정하면, 컨테이너 요소의 크기가 자동으로 내부의 요소를 감쌀 수 있을 만큼 커지게 된다.
 
 
-# 15. 정렬
+## 4. 정렬
 margin, position, float을 이용하여 정렬을 할수있다.
 margin은 가운대 정렬 position, float은 좌우 정렬이다.     
 
-# 16. 선택자 
+
+
+# 5. 선택자
+
+## 1. 선택자 
 1. 전체 선택자
 2. HTML 요소 선택자
 3. 아이디(id) 선택자
@@ -208,17 +212,17 @@ margin은 가운대 정렬 position, float은 좌우 정렬이다.
 그룹 선택자 : 여러선택자를 같이 사용 ,로 연결함    
 전체선택자 : * 모든요소로 지정한다.           
 
-## 1. 자손선택자 
+### 1. 자손선택자 
 특정요소의 하위 요소들을 선택할수있다. 
 
             ex) div p {스타일;}
 
-## 2. 자식선택자 
+### 2. 자식선택자 
 특정요소의 하위 요소중 하로밑에 존재하는 특정타입의 요소를 지정        
 
       ex)div > p{스타일;}
 
-## 3. 동위 선택자
+### 3. 동위 선택자
 
 일반 동위 선택자는 해당 요소와 동위 관계에 있으며, 해당 요소보다 뒤에 존재하는 특정 타입의 요소를 모두 선택
 
@@ -233,28 +237,105 @@ margin은 가운대 정렬 position, float은 좌우 정렬이다.
 
 
 
-# 17. 의사 클래스 
+## 2. 의사 클래스 
 
 요소의 상태를 명시할때 사용하는 클래스     
 
 
-## 1. 동적의사 클래스
+### 1. 동적의사 클래스
 
 link, visited, hover, active, focus 가있다.    
 
-## 2. 상태 의사 클래스
+### 2. 상태 의사 클래스
 checked, enabled, disabled 가있다.     
 
-## 3. 구조 의사 클래스
+### 3. 구조 의사 클래스
 first-child,last-child,nth-child,nth-last-child,              
 first-of-type,last-of-type,nth-of-type,nth-last-of-type
 으로 되어있으며         
 자식요소나 타입 을 지정하여 맨앞 맨뒤등 여러 지정이 가능하다.         
 empty는 자식과 타입이 없는요소지정 root는 html요소를 지정하게 된다.       
 
-# 17. 의사요소
+## 3. 의사요소
 요소의 특정부부만 지정할때 사용 
 
     ex) 선택자::의사요소이름 {속성: 속성값;}
 
 
+## 4. 속성선택자
+
+특정 속성이나 특정 속성값을 가진 요소를 선택 가능      
+[속성이름]으로 작성한다.      
+
+속성값의 경우 [속성이름="속성값"] 와 같이 작성       
+
+
+## 5. 기타의사 클래스    
+### 1. :not 
+모든 선택자와 함께 사용할 수 있으며, 해당 선택자를 반대로 적용하여 선택
+
+      input:not([type="password"]) { background-color: #CD853F; }
+
+ 위와같이 작성시 password 타입을 제와한 나머지 input의 컬러를 적용하게 된다. 
+
+### 2. :lang
+특정 HTML 요소를 사용자 컴퓨터의 언어 설정에 따라 다르게 표현할 때 사용        
+
+
+
+# 6. 고급 CSS
+## 1. 네비게이션 바 
+웹사이트의 메뉴 부분       
+수평 혹은 수직 네비게이션 바가 있으며 링크등을 사용하여 리스트로 만든다.      
+
+
+## 2. 드롭다운 효과
+
+마우스를 올렸을때 나타나는 효과를 만들수 있다.     
+마우스를 몰리면 하위메뉴가 나오거나 다른 요소가 나오게 할수있다.    
+
+## 3. 툴팁
+
+마우스를 올렸을경우 추가적인 정보를 보여주는 효과
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Tooltips</title>
+	<style>
+		.tooltip {
+			position: relative;
+			display: inline-block;
+		}
+		.tooltip .tooltip-content {
+			visibility: hidden;
+			width: 300px;
+			background-color: orange;
+			padding: 0;
+			margin-top: 10px;
+			color: white;
+			text-align: center;
+			position: absolute;
+			z-index: 1;
+		}
+		.tooltip:hover .tooltip-content { visibility: visible; }
+	</style>
+</head>
+
+<body>
+
+	<h1>툴팁 효과</h1>
+	<div class="tooltip">
+		<span>여기에 마우스를 올려보세요!</span>
+		<div class="tooltip-content">
+			<p>마우스를 올려야 나타나는 툴팁입니다!</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
+```
