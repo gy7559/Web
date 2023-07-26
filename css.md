@@ -298,44 +298,31 @@ empty는 자식과 타입이 없는요소지정 root는 html요소를 지정하�
 
 마우스를 올렸을경우 추가적인 정보를 보여주는 효과
 
-```html
-<!DOCTYPE html>
-<html lang="ko">
+## 4. form요소
+css를 이요하여 input요소에도 스타일을 적용가능하다.
 
-<head>
-	<meta charset="UTF-8">
-	<title>CSS Tooltips</title>
-	<style>
-		.tooltip {
-			position: relative;
-			display: inline-block;
-		}
-		.tooltip .tooltip-content {
-			visibility: hidden;
-			width: 300px;
-			background-color: orange;
-			padding: 0;
-			margin-top: 10px;
-			color: white;
-			text-align: center;
-			position: absolute;
-			z-index: 1;
-		}
-		.tooltip:hover .tooltip-content { visibility: visible; }
-	</style>
-</head>
+## 5. @규칙
 
-<body>
+### 1. @inport
+@import 규칙은 다른 스타일 시트에서 스타일 규칙을 가져올 수 있는 규칙           
+CSS파일의 개수가 늘어나면 서버의 부하가 커지기떄문에 부하를 낮추기 위해 사용
 
-	<h1>툴팁 효과</h1>
-	<div class="tooltip">
-		<span>여기에 마우스를 올려보세요!</span>
-		<div class="tooltip-content">
-			<p>마우스를 올려야 나타나는 툴팁입니다!</p>
-		</div>
-	</div>
 
-</body>
+### 2. @font-face
+폰트를 정의할때 사용하는 규칙           
 
-</html>
-```
+### 3. @media
+다른 미디어 타입을 위한 맞춤식 스타일 시트를 지원         
+
+
+
+# 7. css3
+css와 완전히 호환 css의 최신 표준 권고안 이다.      
+
+## 1. 변경사항
+
+1. 선택자 Level3
+2. 미디어 쿼리 Level3
+3. 색 Level3
+4. 네임스페이스
+
