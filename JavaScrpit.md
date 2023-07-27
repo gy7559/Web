@@ -461,3 +461,23 @@ window 객체의 confirm() 메소드는 사용자에게 간단한 메시지를 �
 window 객체의 prompt() 메소드는 사용자에게 간단한 메시지를 보여주고, 사용자가 입력한 문자열을 반환합니다.
 
 ## 7. 타이머
+window 객체는 일정 시간이 지난 뒤에 함수를 호출할 수 있는 메소드를 제공하여 준다.
+ 
+1. setTimeout()
+2. setInterval()
+
+설정된 함수의 호출을 취소 할 수도 있는 메소드가 있다.   
+1. clearTimeout()
+2. clearInterval()
+
+### 1. 함수호출 메소드
+setTimeout()메소드의 경우 명시된 시간이 지나면  함수를 호출한다.
+
+    ex)  window.setTimeout(호출할함수, 지연시간);
+
+
+setInterval() 메소드 의 경우  지정된 시간 간격마다 지정된 함수를 반복적으로 호출한다.     
+
+    ex) window.setInterval(호출할함수, 지연시간);
+
+
