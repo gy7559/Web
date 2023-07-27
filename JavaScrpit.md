@@ -480,4 +480,21 @@ setInterval() 메소드 의 경우  지정된 시간 간격마다 지정된 함�
 
     ex) window.setInterval(호출할함수, 지연시간);
 
+### 2. 함수 호출 취소 메서드
 
+clearTimeout()메소드의 경우 setTimeout() 메소드의 반환값을 clearTimeout() 메소드의 인수로 전달하면,             
+계획된 함수의 호출을 취소할 수 있다.         
+
+    ex) window.clearTimeout(timeoutID);
+
+clearInterval() 메소드의경우 setInterval() 메소드의 반환값을 clearInterval() 메소드의 인수로 전달하면,              
+반복되는 함수의 호출을 취소할 수 있다.
+
+    ex) window.clearInterval(timeoutID);
+
+
+
+# 6. 이벤트
+브라우저가 알려주는 HTML요소의 사건 발생
+
+자바스크립트는 이 이벤트에 따라 특정 동작을 수행 할 수 있다.
