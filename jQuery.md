@@ -142,14 +142,15 @@ $(function() {
 ```
 
 ## 5. 요소의 추가
-요소를 추가할수 있는 4개의 메서드가 있다.    
+요소를 추가할수 있는 여러 메서드가 있다.    
 
+### 1. 요소내부추가
 1. .append()
 2. .prepend()
 3. .appendTo()
 4. .prependTo()
 
-### 1. .append()
+#### 1. .append()
  요소의 마지막에 새로운 요소나 컨텐츠를 추가 가능하다.
 
 ```
@@ -160,10 +161,10 @@ $(function() {
 });
 ```
 
-### 2. .prepend()
+#### 2. .prepend()
 요소의 처음에 새로운 요소나 컨텐츠를 추가 가능하다.
 
-### 3. .appendTo() 
+#### 3. .appendTo() 
  선택한 요소를 '해당 요소의 마지막'에 삽입      
 .append()와는 소스와 타켓의 위치가 서로 반대이다.      
 
@@ -175,4 +176,99 @@ $(function() {
     });
 });
 ```
+#### 4. .prependTo()
+선택한 요소를 '해당 요소의 처음'에 삽입
+.prepend() 메소드와 같지만, 소스(source)와 타겟(target)의 위치가 서로 반대이다.     
+
+```
+$(function() {
+    $("button").on("click", function() {
+        $("<b>새로 추가된 콘텐츠에요!</b>").prependTo(".item");
+    });
+});
+```
+
+
+### 2. 요소 외부 추가
+
+1. .before()
+2. .after()
+3. .insertBefore()
+4. .insertAfter()
+
+#### 1. .before()
+요소 바로 앞에 추가
+```
+$(function() {
+    $("button").on("click", function() {
+        // id가 "firstRow"인 요소의 바로 앞에 새로운 <tr>요소를 추가함.
+        $("#firstRow").before("<tr><td>새로운 행이에요!</td></tr>");
+    });
+});
+```
+
+#### 2. .after()
+요소 바로 뒤에 추가
+```
+$(function() {
+    $("button").on("click", function() {
+        // id가 "firstRow"인 요소의 바로 뒤에 새로운 <tr>요소를 추가함.
+        $("#firstRow").after("<tr><td>새로운 행이에요!</td></tr>");
+    });
+});
+```
+#### 3. .insertBefore()
+해당요소 바로 앞에 삽입한다.
+```
+$(function() {
+    $("button").on("click", function() {
+        // id가 "secondColumn"인 요소의 바로 앞에 새로운 <td>요소를 추가함.
+        $("<td>새로운 셀이에요!</td>").insertBefore("#secondColumn");
+    });
+});
+```
+#### 4. .insertAfter()
+해당요소 바로 뒤에 삽입한다.    
+```
+$(function() {
+    $("button").on("click", function() {
+         // id가 "secondColumn"인 요소의 바로 뒤에 새로운 <td>요소를 추가함.
+        $("<td>새로운 셀이에요!</td>").insertAfter("#secondColumn");
+    });
+});
+```
+
+
+### 3. 요소 포함 추가
+3가지 메서드가 있다.
+1. .wrap()  : 선택한 요소를 포함
+2. .wrapAll() : 선택한 모든 요소를 포함
+3. .wrapInner() : 선택한 요소에 포함됨
+
+```
+$(function() {
+    $("button").on("click", function() {
+        // class가 "content"인 각 요소를 포함하는 새로운 요소를 추가함.
+        $(".content").wrap("<div class='wrapper'></div>");
+    });
+});
+```
+각각 위예제에서 메서드 부분만 변경하면 된다.        
+
+
+### 3. 요소의 복사 
+
+요소나 콘텐츠를 복사하는 메소드는 .clone()이다.        
+
+선택한 요소를 복사 해서 새로운 요소로 만든다.    
+
+```
+$(function() {
+    $("button").on("click", function() {
+        // id가 "firstItem"인 요소를 복사하여 id가 "list"인 요소에 추가함.
+        $("#firstItem").clone().appendTo("#list");
+    });
+});
+```
+
 
