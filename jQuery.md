@@ -64,3 +64,115 @@ p와 span태그를 선택할수있다.
 이와같이 CSS의 선택자인 id, class, 속성등을 지정해서 선택할수있다.      
 
 
+### 2. 제이쿼리 선택자
+비표준 선택자 또한 사용할수있다.     
+
+
+#### 1. 선택 요소의 저장 
+```
+$(function() {
+    var items = $("li"); // <li>요소를 모두 선택하여 변수 items에 저장함.
+    $("button").on("click", function() {
+        $("#len").text("저장된 <li>요소의 총 개수는 " + items.length + "개 입니다.");
+    });
+});
+```
+위와 같이 li의 요소를 변수에 저장하여 해당 변수를 사용할수 있다.         
+
+필터링 또한 가능하다.      
+필터링은 특정 요소중에서 다른 요소를 갖고 있는 요소만을 선택할수 있게 해준다
+
+ex)
+```
+$(function() {
+    $("button").on("click", function() {
+        $("li:has(span)").text("<span>요소를 가지고 있는 아이템이에요!");
+    });
+});
+```
+li 요소 중에서 span요소만 갖고 있는 li요소만 지정하도록 설정 하여 줄수 있다.           
+
+#### 2. getter와 setter 메소드
+
+getter는 요소에 접근하여 값을 읽어오기 위한 메소드,        
+setter는 요소에 접근하여 값을 설정하기 위한 메소드이다.       
+
+getter는 읽어오기 때문에 인수를 전달할 필요 없지만        
+setter의 경우 값을 설정해 주어야 되기 떄문에 설정해줄 값이 필요하다.      
+
+**메소드 체이닝**
+
+getter의 경우 여러 요소가 선택되면 첫 번째 요소의 값만 반환을 하게되는대        
+하지만 setter 메소드는 선택된 '모든 요소'에 인수로 전달된 값을 설정하고            
+모든요소에 접근할 수 있는 또 다른 제이쿼리 객체를 반환하는대          
+이 객체를 이용하면 세미콜론(;)을 사용하지 않고도, 곧바로 다른 제이쿼리 메소드를 호출 할수있다.        
+이런 방식으로 여러 개의 메소드가 연속으로 호출되는 것을 메소드 체이닝(method chaining)이라고 한다.          
+
+```
+$(function() {
+    $("button").on("click", function() {
+        // id가 "list"인 요소의 자손 요소 중에서 <li>요소를 모두 선택한 후에,
+        // 그 중에서 두 번째 요소의 값을 설정함.
+        $("#list").find("li").eq(1).html("두 번째 아이템을 선택했어요!!");
+    });
+});
+```
+
+**.width() 메소드와 .height() 메소드**
+getter와 setter를 써서 높이 넓이를 구하거나 설정해줄수있다.       
+
+```
+$(function() {
+    $("#getter").on("click", function() {
+      var size = "너비는 " + $("#box").width() + "px이고, 높이는 "
+            + $("#box").height() + "px입니다.<br>";
+        $("#text").html(size);
+    });
+
+    $("#setter").on("click", function() {
+      w = $("#box").width();
+      h = $("#box").height();
+      $("#box").width(w/2).height(h/2);
+ 
+      var size = "너비는 " + $("#box").width() + "px이고, 높이는 "
+          + $("#box").height() + "px로 변경되었습니다.<br>";
+        $("#text").html(size);
+    });
+});
+```
+
+## 5. 요소의 추가
+요소를 추가할수 있는 4개의 메서드가 있다.    
+
+1. .append()
+2. .prepend()
+3. .appendTo()
+4. .prependTo()
+
+### 1. .append()
+ 요소의 마지막에 새로운 요소나 컨텐츠를 추가 가능하다.
+
+```
+$(function() {
+    $("button").on("click", function() {
+        $("#list").append("<li>새로 추가된 아이템이에요!</li>");
+    });
+});
+```
+
+### 2. .prepend()
+요소의 처음에 새로운 요소나 컨텐츠를 추가 가능하다.
+
+### 3. .appendTo() 
+ 선택한 요소를 '해당 요소의 마지막'에 삽입      
+.append()와는 소스와 타켓의 위치가 서로 반대이다.      
+
+```
+$(function() {
+    $("#firstBtn").on("click", function() {
+        // id가 "list"인 요소의 맨 마지막에 id가 "firstItem"인 요소를 추가함.
+        $("#firstItem").appendTo("#list");
+    });
+});
+```
+
