@@ -271,4 +271,30 @@ $(function() {
 });
 ```
 
+### 4. 요소의 대체
+선택한 요소나 콘텐츠를 지정된 요소로 대체하는 메서드        
 
+1. .replaceAll()
+2. .replaceWith()
+
+둘다 요소를 대체하는것은 맞지만 replaceWith은 삭제된 이전요소를 반환 할수있다.       
+
+
+### 5. 요소의 삭제
+특정 콘텐츠나 요소를 삭제하는 메서드 
+
+1. .remove()
+2. .detach()
+3. .empty()
+4. .unwrap()
+
+#### 1. .remove()
+remove의 경우 선택한 요소를 DOM트리에서 삭제한다.
+```
+$(function() {
+    $("button").on("click", function() {
+        // class가 "content"인 요소 중에서 class가 각각 "first", "second"인 요소를 모두 삭제함.
+        $(".content").remove(".first, .second");
+    });
+});
+```
