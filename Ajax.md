@@ -63,3 +63,23 @@ send() 메소드는 작성된 Ajax 요청을 서버로 전달합니다.
 send();       // GET 방식
 send(문자열); // POST 방식
 ```
+### 3. 서버 응답 확인
+Ajax에서 서버로부터의 응답을 확인하기 위해 사용하는 XMLHttpRequest 객체의 프로퍼티는 다음과 같다.               
+
+#### 1. readyState 프로퍼티
+readyState 프로퍼티는 XMLHttpRequest 객체의 현재 상태를 나타낸다.           
+
+ 1. UNSENT (숫자 0) : XMLHttpRequest 객체가 생성됨.
+ 2. OPENED (숫자 1) : open() 메소드가 성공적으로 실행됨.
+ 3. HEADERS_RECEIVED (숫자 2) : 모든 요청에 대한 응답이 도착함.
+ 4. LOADING (숫자 3) : 요청한 데이터를 처리 중임.
+ 5. DONE (숫자 4) : 요청한 데이터의 처리가 완료되어 응답할 준비가 완료됨.
+
+
+#### 2. status 프로퍼티
+
+status 프로퍼티는 서버의 문서 상태를 나타냅니다.
+
+ - 200 : 서버에 문서가 존재함.
+ - 404 : 서버에 문서가 존재하지 않음.
+
