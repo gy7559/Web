@@ -83,3 +83,11 @@ status 프로퍼티는 서버의 문서 상태를 나타냅니다.
  - 200 : 서버에 문서가 존재함.
  - 404 : 서버에 문서가 존재하지 않음.
 
+### 3. onreadystatechange 프로퍼티
+onreadystatechange 프로퍼티는 XMLHttpRequest 객체의 readyState 프로퍼티 값이 변할 때마다 자동으로 호출되는 함수를 설정합니다.   
+
+
+
+
+
+
