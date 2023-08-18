@@ -87,7 +87,15 @@ status 프로퍼티는 서버의 문서 상태를 나타냅니다.
 onreadystatechange 프로퍼티는 XMLHttpRequest 객체의 readyState 프로퍼티 값이 변할 때마다 자동으로 호출되는 함수를 설정합니다.   
 
 
+### 4. http헤더
+#### 1. HTTP 요청 헤더
+Ajax에서는 요청을 보내기 전에 setRequestHeader() 메소드를 사용하여 HTTP 요청 헤더를 작성할 수 있습니다. 
 
+#### 2. HTTP 응답 헤더
+Ajax에서는 서버로부터 전달받은 HTTP 응답 헤더 내용을 다음 메소드를 이용하여 확인할 수 있습니다.
+
+1. getAllResponseHeaders() 메소드 :  HTTP 응답 헤더의 모든 헤더를 문자열로 반환합니다.
+2. getResponseHeader() 메소드 :  HTTP 응답 헤더 중 인수로 전달받은 이름과 일치하는 헤더의 값을 문자열로 반환합니다.
 
 
 
