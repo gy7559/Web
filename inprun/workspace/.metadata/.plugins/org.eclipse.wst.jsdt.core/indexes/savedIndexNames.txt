@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\inprun\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1265608567.index
+299243037.index
+1257742345.index
+468096105.index
+597491351.index
+2792308777.index
+1090965465.index

@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+<h2>회원 정보보기</h2>
+<%
+	//post방식으로 데이터가 넘어올때 한글이 깨질수 있어서 밑에줄 코드를 넣는다.
+	 request.setCharacterEncoding("EUC-KR");
+
+	//사용자로 부터 넘어온 각 데이터를 저장 
+	String id = request.getParameter("id");
+	String pass1 = request.getParameter("pass1");
+	String pass2 = request.getParameter("pass2");
+	String email = request.getParameter("email");
+	String tel = request.getParameter("tel");
+	
+	//체크박스는 []배열 타입으로 리턴 
+	String[] hobby = request.getParameterValues("habby");
+%>
+</body>
+</html>
